@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://main123"]
+[gd_scene load_steps=7 format=3 uid="uid://main123"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
 [ext_resource type="Script" path="res://scripts/pipemanager.gd" id="2_pipemanager"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="3_ui"]
 [ext_resource type="PackedScene" uid="uid://bird123" path="res://scenes/bird.tscn" id="4_bird"]
+[ext_resource type="Texture2D" path="res://sprites.tres" id="1_sprites"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
 size = Vector2(600, 50)
@@ -35,6 +36,7 @@ shape = SubResource("RectangleShape2D_ground")
 [node name="Sprite2D" type="Sprite2D" parent="Ground"]
 texture_filter = 0
 modulate = Color(0.6, 0.4, 0.2, 1)
+texture = ExtResource("1_sprites")
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("3_ui")

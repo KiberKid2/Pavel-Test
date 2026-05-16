@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://pipe123"]
+[gd_scene load_steps=6 format=3 uid="uid://pipe123"]
 
 [ext_resource type="Script" path="res://scripts/pipe.gd" id="1_pipe"]
+[ext_resource type="Texture2D" path="res://sprites.tres" id="1_sprites"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_top"]
 size = Vector2(60, 800)
@@ -14,10 +15,12 @@ script = ExtResource("1_pipe")
 [node name="TopPipe" type="Sprite2D" parent="."]
 texture_filter = 0
 modulate = Color(0.2, 0.7, 0.2, 1)
+texture = ExtResource("1_sprites")
 
 [node name="BottomPipe" type="Sprite2D" parent="."]
 texture_filter = 0
 modulate = Color(0.2, 0.7, 0.2, 1)
+texture = ExtResource("1_sprites")
 
 [node name="TopCollision" type="StaticBody2D" parent="TopPipe"]
 collision_layer = 2
