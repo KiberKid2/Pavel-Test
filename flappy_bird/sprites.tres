@@ -1,0 +1,6 @@
+[gd_resource type="Texture2D" load_steps=2 format=3 uid="uid://sprites_texture"]
+
+[ext_resource type="Image" path="res://sprites.png" id="1_image"]
+
+[resource]
+image = ExtResource("1_image")
